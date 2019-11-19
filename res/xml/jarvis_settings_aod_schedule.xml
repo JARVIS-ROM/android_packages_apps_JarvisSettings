@@ -32,4 +32,10 @@
         android:key="doze_always_on_auto_till"
         android:title="@string/night_display_end_time_title" />
 
+    <com.jarvis.settings.preferences.SecureSettingSwitchPreference
+        android:key="doze_on_charge"
+        android:defaultValue="false"
+        android:title="@string/doze_on_charge_title"
+        android:summary="@string/doze_on_charge_summary" />
+
 </PreferenceScreen>
