@@ -80,11 +80,11 @@
             android:fragment="com.jarvis.settings.fragments.NotificationsSettings"
             android:icon="@drawable/ic_settings_notifications"/>
 
-        <!-- Misc
+        <!-- Misc  -->
         <Preference
             android:key="misc_category"
             android:title="@string/misc_title"
             android:fragment="com.jarvis.settings.fragments.MiscSettings"
             android:icon="@drawable/ic_settings_miscs"/>
--->
+
 </PreferenceScreen>

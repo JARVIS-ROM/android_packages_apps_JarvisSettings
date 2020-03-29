@@ -18,4 +18,11 @@
     android:title="@string/misc_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <!-- Adaptive Playback -->
+    <Preference
+        android:key="jarvis_settngs_adaptive_playback"
+        android:title="@string/adaptive_playback_title"
+        android:summary="@string/adaptive_playback_summary"
+        android:fragment="com.jarvis.settings.fragments.AdaptivePlayback" />
+
 </PreferenceScreen>

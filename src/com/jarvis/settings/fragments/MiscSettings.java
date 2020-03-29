@@ -15,12 +15,16 @@
  */
 package com.jarvis.settings.fragments;
 
+import android.content.Context;
+import android.os.Bundle;
+
 import com.android.internal.logging.nano.MetricsProto;
 
-import android.os.Bundle;
 import com.android.settings.R;
 
 import com.android.settings.SettingsPreferenceFragment;
+
+import com.jarvis.settings.fragments.AdaptivePlayback;
 
 public class MiscSettings extends SettingsPreferenceFragment {
 
@@ -29,6 +33,10 @@ public class MiscSettings extends SettingsPreferenceFragment {
         super.onCreate(icicle);
 
         addPreferencesFromResource(R.xml.jarvis_settings_misc);
+    }
+
+    public static void reset(Context mContext) {
+        AdaptivePlayback.reset(mContext);
     }
 
     @Override
