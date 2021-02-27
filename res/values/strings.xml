@@ -42,6 +42,8 @@
     <string name="unit_seconds">seconds</string>
     <string name="unit_pixels">dp</string>
     <string name="unit_milliseconds">milliseconds</string>
+    <string name="default_string">Default</string>
+    <string name="disabled">Disabled</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
@@ -214,4 +216,10 @@
     <string name="network_options_title">Options</string>
     <string name="network_traffic_autohide_title">Hide network traffic indicator is inactive</string>
     <string name="network_traffic_autohide_summary">Hide when network traffic indicator is below 1 KB/s</string>
+
+    <!-- AOD Schedule -->
+    <string name="always_on_display_schedule_title">Always on display schedule</string>
+    <string name="always_on_display_schedule_sunset">Sunset</string>
+    <string name="always_on_display_schedule_sunrise">Sunrise</string>
+
 </resources>
