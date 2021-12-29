@@ -74,4 +74,12 @@
     <string name="adaptive_playback_intro_text">Automatically pauses media when the volume is muted and will resume automatically when volume is restored within the set time</string>
     <string name="adaptive_playback_timeout_title">Playback timeout</string>
 
+    <!-- Font style / Icon pack -->
+    <string name="theme_customization_font_title">Font style</string>
+    <string name="theme_customization_font_summary">Set system font style</string>
+    <string name="theme_customization_icon_pack_title">SyetmUI Icon Style</string>
+    <string name="theme_customization_icon_pack_summary">Set SystemUI icon style</string>
+    <string name="theme_customization_icon_shape_title">Apps icon style</string>
+    <string name="theme_customization_icon_shape_summary">Set apps icon style</string>
+
 </resources>
