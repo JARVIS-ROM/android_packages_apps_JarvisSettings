@@ -81,5 +81,9 @@
     <string name="theme_customization_icon_pack_summary">Set SystemUI icon style</string>
     <string name="theme_customization_icon_shape_title">Apps icon style</string>
     <string name="theme_customization_icon_shape_summary">Set apps icon style</string>
+    <string name="theme_customization_signal_icon_title">Signal icon style</string>
+    <string name="theme_customization_signal_icon_summary">Set signal icon style</string>
+    <string name="theme_customization_wifi_icon_title">WiFi icon style</string>
+    <string name="theme_customization_wifi_icon_summary">Set Wi-Fi icon style</string>
 
 </resources>
