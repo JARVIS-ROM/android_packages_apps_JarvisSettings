@@ -52,13 +52,13 @@
             android:fragment="com.jarvis.settings.fragments.GestureSettings"
             android:icon="@drawable/ic_settings_pdgestures"/>
 
-        <!-- Lock Screen
+        <!-- Lock Screen -->
         <Preference
             android:key="lockscreen_category"
             android:title="@string/lockscreen_title"
             android:fragment="com.jarvis.settings.fragments.LockScreenSettings"
             android:icon="@drawable/ic_settings_lockscreens"/>
--->
+
         <!-- Power Menu -->
         <Preference
             android:key="powermenu_category"

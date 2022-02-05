@@ -15,22 +15,63 @@
  */
 package com.jarvis.settings.fragments;
 
+import android.content.ContentResolver;
+import android.content.Context;
+import android.hardware.fingerprint.FingerprintManager;
+import android.provider.Settings;
+
+import androidx.preference.Preference;
+import androidx.preference.PreferenceCategory;
+
 import com.android.internal.logging.nano.MetricsProto;
 
 import android.os.Bundle;
+import android.os.UserHandle;
 import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settingslib.search.SearchIndexable;
 
+import java.util.List;
+
 @SearchIndexable
 public class LockScreenSettings extends SettingsPreferenceFragment {
+
+    private static final String FINGERPRINT_AUTHENTICATION = "fingerprint_authentication";
+    private static final String KEY_FP_SUCCESS_VIBRATE = "fp_success_vibrate";
+    private static final String KEY_FP_ERROR_VIBRATE = "fp_error_vibrate";
+
+    private Preference mFingerprintVib;
+    private Preference mFingerprintVibErr;
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
         addPreferencesFromResource(R.xml.jarvis_settings_lockscreen);
+
+        PreferenceCategory fpAuthCategory = (PreferenceCategory) findPreference(FINGERPRINT_AUTHENTICATION);
+
+        FingerprintManager mFingerprintManager = (FingerprintManager)
+                getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
+
+        mFingerprintVib = (Preference) findPreference(KEY_FP_SUCCESS_VIBRATE);
+        mFingerprintVibErr = (Preference) findPreference(KEY_FP_ERROR_VIBRATE);
+
+        if (mFingerprintManager == null || !mFingerprintManager.isHardwareDetected()) {
+            fpAuthCategory.removePreference(mFingerprintVib);
+            fpAuthCategory.removePreference(mFingerprintVibErr);
+        }
+
+    }
+
+    public static void reset(Context mContext) {
+        ContentResolver resolver = mContext.getContentResolver();
+
+        Settings.System.putIntForUser(resolver,
+                Settings.System.FP_ERROR_VIBRATE, 1, UserHandle.USER_CURRENT);
+        Settings.System.putIntForUser(resolver,
+                Settings.System.FP_SUCCESS_VIBRATE, 1, UserHandle.USER_CURRENT);
     }
 
     @Override
@@ -39,5 +80,20 @@ public class LockScreenSettings extends SettingsPreferenceFragment {
     }
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider(R.xml.jarvis_settings_lockscreen);
+            new BaseSearchIndexProvider(R.xml.jarvis_settings_lockscreen) {
+
+                @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    List<String> keys = super.getNonIndexableKeys(context);
+
+                    FingerprintManager mFingerprintManager = (FingerprintManager)
+                            context.getSystemService(Context.FINGERPRINT_SERVICE);
+                    if (mFingerprintManager == null || !mFingerprintManager.isHardwareDetected()) {
+                        keys.add(KEY_FP_SUCCESS_VIBRATE);
+                        keys.add(KEY_FP_ERROR_VIBRATE);
+                    }
+
+                    return keys;
+                }
+            };
 }
