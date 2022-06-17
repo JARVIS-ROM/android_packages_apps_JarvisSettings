@@ -25,4 +25,11 @@
         android:summary="@string/adaptive_playback_summary"
         android:fragment="com.jarvis.settings.fragments.AdaptivePlayback" />
 
+    <!-- Ignore secure window feature  -->
+    <com.jarvis.settings.preferences.SecureSettingSwitchPreference
+        android:key="window_ignore_secure"
+        android:title="@string/ignore_window_secure_title"
+        android:summary="@string/ignore_window_secure_summary"
+        android:defaultValue="false"/>
+
 </PreferenceScreen>
