@@ -136,4 +136,11 @@
     <string name="qs_show_data_usage_title">Show data usage</string>
     <string name="qs_show_data_usage_summary">Show daily cellular/Wi-Fi data usage in QS footer</string>
 
+    <!-- Brightness slider -->
+    <string name="qs_brightness_slider_category">Brightness slider</string>
+    <string name="qqs_show_brightness_title">Show brightness slider in Quick QS panel</string>
+    <string name="brightness_slider_position_title">Brightness slider position</string>
+    <string name="top">Top</string>
+    <string name="bottom">Bottom</string>
+    <string name="show_auto_brightness_button_title">Show auto brightness button</string>
 </resources>
