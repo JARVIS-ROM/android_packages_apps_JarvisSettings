@@ -94,39 +94,4 @@
             android:fragment="com.jarvis.settings.fragments.MiscSettings"
             android:icon="@drawable/ic_settings_miscs"/>
 
-    <!-- Font style -->
-    <Preference
-        android:key="android.theme.customization.fonts"
-        android:title="@string/theme_customization_font_title"
-        android:summary="@string/theme_customization_font_summary"
-        android:fragment="com.jarvis.settings.fragments.FontsPicker"/>
-
-    <!-- Icon pack -->
-    <Preference
-        android:key="android.theme.customization.icon_pack"
-        android:title="@string/theme_customization_icon_pack_title"
-        android:summary="@string/theme_customization_icon_pack_summary"
-        android:fragment="com.jarvis.settings.fragments.StatusbarIcons"/>
-
-    <!-- Adaptive icon pack -->
-    <Preference
-        android:key="android.theme.customization.adaptive_icon_shape"
-        android:title="@string/theme_customization_icon_shape_title"
-        android:summary="@string/theme_customization_icon_shape_summary"
-        android:fragment="com.jarvis.settings.fragments.IconShapes"/>
-
-    <!-- Signal icon style -->
-    <Preference
-        android:key="android.theme.customization.signal_icon"
-        android:title="@string/theme_customization_signal_icon_title"
-        android:summary="@string/theme_customization_signal_icon_summary"
-        android:fragment="com.jarvis.settings.fragments.SignalIcons"/>
-
-    <!-- Wifi icon style -->
-    <Preference
-        android:key="android.theme.customization.wifi_icon"
-        android:title="@string/theme_customization_wifi_icon_title"
-        android:summary="@string/theme_customization_wifi_icon_summary"
-        android:fragment="com.jarvis.settings.fragments.WifiIcons"/>
-
 </PreferenceScreen>
