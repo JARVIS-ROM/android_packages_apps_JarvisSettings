@@ -29,6 +29,7 @@
     <string name="quicksettings_title">Quick Settings</string>
     <string name="recents_title">Recents apps</string>
     <string name="statusbar_title">Status bar</string>
+    <string name="userinterface_title">User Interface</string>
     <string name="volume_title">Volume Settings</string>
 
     <!-- General strings -->

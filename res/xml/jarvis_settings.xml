@@ -80,6 +80,13 @@
             android:fragment="com.jarvis.settings.fragments.NotificationsSettings"
             android:icon="@drawable/ic_settings_notifications"/>
 
+        <!-- User Interface -->
+        <Preference
+            android:key="userinterface_category"
+            android:title="@string/userinterface_title"
+            android:fragment="com.jarvis.settings.fragments.UserInterface"
+            android:icon="@drawable/ic_settings_userinterface"/>
+
         <!-- Misc  -->
         <Preference
             android:key="misc_category"
