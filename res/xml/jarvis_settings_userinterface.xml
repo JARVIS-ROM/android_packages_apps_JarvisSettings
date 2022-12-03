@@ -53,4 +53,12 @@
         android:title="@string/theme_customization_wifi_icon_title"
         android:summary="@string/theme_customization_wifi_icon_summary"
         android:fragment="com.jarvis.settings.fragments.WifiIcons"/>
+
+    <!-- Monet settings -->
+    <Preference
+        android:key="monet_settings"
+        android:title="@string/monet_settings_title"
+        android:summary="@string/monet_settings_sammary"
+        android:fragment="com.jarvis.settings.fragments.MonetSettings" />
+
 </PreferenceScreen>
