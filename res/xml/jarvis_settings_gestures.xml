@@ -18,10 +18,17 @@
     android:title="@string/gestures_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+     <!-- Swipe gestures-->
+    <PreferenceCategory
+        android:title="@string/swipe_gestures_cat_title">
+
+     <!-- Screenshot gesture-->
     <com.jarvis.settings.preferences.SystemSettingSwitchPreference
         android:key="three_finger_gesture"
         android:title="@string/three_finger_gesture"
         android:summary="@string/three_finger_gesture_summary"
         android:defaultValue="false" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>

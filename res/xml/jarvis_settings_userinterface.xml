@@ -19,20 +19,28 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <!-- Font style -->
+    <PreferenceCategory
+        android:title="@string/theme_customization_font_cat_title">
+
     <Preference
         android:key="android.theme.customization.fonts"
         android:title="@string/theme_customization_font_title"
         android:summary="@string/theme_customization_font_summary"
         android:fragment="com.jarvis.settings.fragments.FontsPicker"/>
 
-    <!-- Icon pack -->
-    <Preference
+    </PreferenceCategory>
+
+    <!-- SyetmUI icon style -->
+    <PreferenceCategory
+        android:title="@string/theme_customization_icons_cat_title">
+
+        <Preference
         android:key="android.theme.customization.icon_pack"
         android:title="@string/theme_customization_icon_pack_title"
         android:summary="@string/theme_customization_icon_pack_summary"
         android:fragment="com.jarvis.settings.fragments.StatusbarIcons"/>
 
-    <!-- Adaptive icon pack -->
+    <!-- Apps icon style -->
     <Preference
         android:key="android.theme.customization.adaptive_icon_shape"
         android:title="@string/theme_customization_icon_shape_title"
@@ -47,18 +55,25 @@
         android:summary="@string/theme_customization_signal_icon_summary"
         android:fragment="com.jarvis.settings.fragments.SignalIcons"/>
 
-    <!-- Wifi icon style -->
+    <!-- Wi-Fi icon style -->
     <Preference
         android:key="android.theme.customization.wifi_icon"
         android:title="@string/theme_customization_wifi_icon_title"
         android:summary="@string/theme_customization_wifi_icon_summary"
         android:fragment="com.jarvis.settings.fragments.WifiIcons"/>
 
+    </PreferenceCategory>
+
     <!-- Monet settings -->
+    <PreferenceCategory
+        android:title="@string/monet_settings_cat_title">
+
     <Preference
         android:key="monet_settings"
         android:title="@string/monet_settings_title"
         android:summary="@string/monet_settings_sammary"
         android:fragment="com.jarvis.settings.fragments.MonetSettings" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>

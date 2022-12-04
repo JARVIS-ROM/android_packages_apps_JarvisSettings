@@ -55,6 +55,9 @@
     <string name="color_down_arrow" translatable="false">"↓"</string>
     <string name="longpress_info">Longpress box to save color</string>
 
+    <!-- Gestures -->
+    <string name="swipe_gestures_cat_title">Swipe gestures</string>
+
     <!-- Three-fingers-swipe to screenshot -->
     <string name="three_finger_gesture">Swipe to screenshot</string>
     <string name="three_finger_gesture_summary">Swipe down with three fingers to take a screenshot</string>
@@ -76,13 +79,15 @@
     <string name="adaptive_playback_timeout_title">Playback timeout</string>
 
     <!-- Font style / Icon pack -->
-    <string name="theme_customization_font_title">Font style</string>
-    <string name="theme_customization_font_summary">Set system font style</string>
-    <string name="theme_customization_icon_pack_title">SyetmUI Icon Style</string>
+    <string name="theme_customization_font_title">Preferred font</string>
+    <string name="theme_customization_font_cat_title">Font style</string>
+    <string name="theme_customization_font_summary">Set preferred system font style</string>
+    <string name="theme_customization_icon_pack_title">SyetmUI icon style</string>
     <string name="theme_customization_icon_pack_summary">Set SystemUI icon style</string>
     <string name="theme_customization_icon_shape_title">Apps icon style</string>
     <string name="theme_customization_icon_shape_summary">Set apps icon style</string>
     <string name="theme_customization_signal_icon_title">Signal icon style</string>
+    <string name="theme_customization_icons_cat_title">Icon styles</string>
     <string name="theme_customization_signal_icon_summary">Set signal icon style</string>
     <string name="theme_customization_wifi_icon_title">WiFi icon style</string>
     <string name="theme_customization_wifi_icon_summary">Set Wi-Fi icon style</string>
@@ -94,6 +99,7 @@
 
     <!-- Monet settings -->
     <string name="monet_settings_title">Theming settings</string>
+    <string name="monet_settings_cat_title">Monet</string>
     <string name="monet_settings_sammary">A few extra settings to customize monet engine</string>
     <string name="theme_style_title">Theme style</string>
     <string name="theme_style_tonal_spot">Tonal Spot (Default)</string>
