@@ -87,4 +87,9 @@
     <string name="theme_customization_wifi_icon_title">WiFi icon style</string>
     <string name="theme_customization_wifi_icon_summary">Set Wi-Fi icon style</string>
 
+    <!-- Status bar - icons -->
+    <string name="status_bar_icons_title">Status bar icons</string>
+    <string name="status_bar_icons_cat_title">System icons</string>
+    <string name="status_bar_icons_summary">Control which status bar icons are shown</string>
+
 </resources>

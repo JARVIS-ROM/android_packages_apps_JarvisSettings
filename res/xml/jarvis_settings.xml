@@ -17,13 +17,13 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/jarvis_settings_title" >
 
-        <!-- Status Bar 
+        <!-- Status Bar -->
         <Preference
             android:key="statusbar_category"
             android:title="@string/statusbar_title"
             android:fragment="com.jarvis.settings.fragments.StatusBarSettings"
             android:icon="@drawable/ic_settings_statusbar"/>
--->
+
         <!-- Quick Settings 
         <Preference
             android:key="quicksettings_category"
