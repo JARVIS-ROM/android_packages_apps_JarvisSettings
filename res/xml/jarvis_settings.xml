@@ -87,6 +87,17 @@
             android:fragment="com.jarvis.settings.fragments.UserInterface"
             android:icon="@drawable/ic_settings_userinterface"/>
 
+        <!-- Parallel space -->
+        <Preference
+            android:key="parallel_space"
+            android:icon="@drawable/ic_parallel_space"
+            android:title="@string/laboratory_parallel_space_title"
+            android:summary="@string/laboratory_parallel_space_summary">
+            <intent
+                android:targetPackage="ink.kscope.parallelspace"
+                android:targetClass="ink.kscope.parallelspace.MainActivity" />
+        </Preference>
+
         <!-- Misc  -->
         <Preference
             android:key="misc_category"
