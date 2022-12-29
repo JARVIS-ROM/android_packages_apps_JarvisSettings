@@ -24,13 +24,13 @@
             android:fragment="com.jarvis.settings.fragments.StatusBarSettings"
             android:icon="@drawable/ic_settings_statusbar"/>
 
-        <!-- Quick Settings 
+        <!-- Quick Settings -->
         <Preference
             android:key="quicksettings_category"
             android:title="@string/quicksettings_title"
             android:fragment="com.jarvis.settings.fragments.QuickSettings"
             android:icon="@drawable/ic_settings_quicksettings"/>
--->
+
         <!-- Buttons
         <Preference
             android:key="buttonsettings_category"
