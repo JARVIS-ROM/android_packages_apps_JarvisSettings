@@ -43,11 +43,18 @@
 
     </PreferenceCategory>
 
-    <!-- Data usage -->
-    <com.jarvis.settings.preferences.SecureSettingSwitchPreference
-        android:key="qs_show_data_usage"
-        android:title="@string/qs_show_data_usage_title"
-        android:summary="@string/qs_show_data_usage_summary"
-        android:defaultValue="true" />
+    <!-- Misc. -->
+    <PreferenceCategory
+        android:key="quick_settings_misc_category"
+        android:title="@string/misc_title_cat">
+
+        <!-- Data usage -->
+        <com.jarvis.settings.preferences.SecureSettingSwitchPreference
+            android:key="qs_show_data_usage"
+            android:title="@string/qs_show_data_usage_title"
+            android:summary="@string/qs_show_data_usage_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
