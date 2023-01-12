@@ -202,4 +202,8 @@
     <string name="pulse_empty_block_size">Block spacing</string>
     <string name="pulse_solid_units_rounded_title">Rounded corners</string>
     <string name="pulse_solid_units_rounded_summary">Solid lines with rounded tip</string>
+
+    <!-- Show clipboard overlay -->
+    <string name="show_clipboard_overlay_title">Show clipboard overlay</string>
+    <string name="show_clipboard_overlay_summary">Show an overlay in the left bottom corner of the screen when something is copied to the clipboard</string>
 </resources>
