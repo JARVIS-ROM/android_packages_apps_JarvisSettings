@@ -75,4 +75,15 @@
             settings:interval="1"
             android:dependency="pulse_ambient_light" />
     </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="misc"
+        android:title="@string/misc_title_cat" >
+
+        <com.jarvis.settings.preferences.SecureSettingSwitchPreference
+            android:key="pulse_on_new_tracks"
+            android:title="@string/pulse_on_new_tracks_title"
+            android:summary="@string/pulse_on_new_tracks_summary" />
+
+    </PreferenceCategory>
 </PreferenceScreen>

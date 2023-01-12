@@ -55,6 +55,8 @@ public class NotificationsSettings extends SettingsPreferenceFragment {
                 Settings.Secure.PULSE_AMBIENT_LIGHT_DURATION, 2, UserHandle.USER_CURRENT);
         Settings.Secure.putIntForUser(resolver,
                 Settings.Secure.PULSE_AMBIENT_LIGHT_LAYOUT, 0, UserHandle.USER_CURRENT);
+        Settings.Secure.putIntForUser(resolver,
+                Settings.Secure.PULSE_ON_NEW_TRACKS, 0, UserHandle.USER_CURRENT);
     }
 
     @Override
