@@ -17,6 +17,7 @@ package com.jarvis.settings.fragments;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.ContentResolver;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.UserHandle;
@@ -35,6 +36,8 @@ import com.android.settings.SettingsPreferenceFragment;
 
 import com.android.internal.logging.nano.MetricsProto;
 
+import com.jarvis.settings.fragments.PulseSettings;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -45,6 +48,11 @@ public class UserInterface extends SettingsPreferenceFragment {
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.jarvis_settings_userinterface);
         PreferenceScreen prefSet = getPreferenceScreen();
+    }
+
+    public static void reset(Context mContext) {
+        ContentResolver resolver = mContext.getContentResolver();
+        PulseSettings.reset(mContext);
     }
 
     @Override

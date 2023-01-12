@@ -76,4 +76,15 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="misc"
+        android:title="@string/misc_title_cat" >
+
+        <Preference
+            android:key="pulse_settings"
+            android:title="@string/pulse_settings"
+            android:summary="@string/pulse_settings_summary"
+            android:fragment="com.jarvis.settings.fragments.PulseSettings" />
+
+    </PreferenceCategory>
 </PreferenceScreen>
