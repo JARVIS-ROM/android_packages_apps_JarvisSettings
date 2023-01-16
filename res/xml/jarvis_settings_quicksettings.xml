@@ -23,13 +23,11 @@
         android:key="quick_settings_brighness_category"
         android:title="@string/qs_brightness_slider_category">
 
-        <com.jarvis.settings.preferences.SystemSettingListPreference
+        <com.jarvis.settings.preferences.SystemSettingSwitchPreference
             android:key="brightness_slider_position"
             android:title="@string/brightness_slider_position_title"
-            android:summary="%s"
-            android:entries="@array/brightness_slider_position_entries"
-            android:entryValues="@array/brightness_slider_position_values"
-            android:defaultValue="0" />
+            android:summary="@string/brightness_slider_position_summary"
+            android:defaultValue="false" />
 
         <com.jarvis.settings.preferences.SystemSettingSwitchPreference
             android:key="qqs_show_brightness"

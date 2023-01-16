@@ -142,9 +142,8 @@
     <!-- Brightness slider -->
     <string name="qs_brightness_slider_category">Brightness slider</string>
     <string name="qqs_show_brightness_title">Show brightness slider in Quick QS panel</string>
-    <string name="brightness_slider_position_title">Brightness slider position</string>
-    <string name="top">Top</string>
-    <string name="bottom">Bottom</string>
+    <string name="brightness_slider_position_title">Brightness at bottom</string>
+    <string name="brightness_slider_position_summary">Show brightness slider at the bottom of QS and QQS</string>
     <string name="show_auto_brightness_button_title">Show auto brightness button</string>
 
     <!-- Fingerprint authentication vibration -->
