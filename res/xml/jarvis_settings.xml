@@ -87,6 +87,13 @@
             android:fragment="com.jarvis.settings.fragments.UserInterface"
             android:icon="@drawable/ic_settings_userinterface"/>
 
+        <!-- Apps -->
+        <Preference
+            android:key="apps_category"
+            android:title="@string/apps_title"
+            android:fragment="com.jarvis.settings.fragments.AppsSettings"
+            android:icon="@drawable/ic_settings_apps"/>
+
         <!-- Misc  -->
         <Preference
             android:key="misc_category"
